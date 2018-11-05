@@ -6,11 +6,18 @@
 
 <script>
 import Header from './Header/Header';
+import { fetchPaintings } from '../utilities/apiCalls';
 
 export default {
   name: 'app',
+  mounted() {
+    fetchPaintings();
+  },
   components: {
     Header
+  },
+  methods: {
+    fetchPaintings
   }
 };
 </script>
