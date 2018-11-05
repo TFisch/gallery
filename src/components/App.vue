@@ -1,11 +1,13 @@
 <template>
   <div id="app">
     <Header></Header>
+    <GalleryList></GalleryList>
   </div>
 </template>
 
 <script>
 import Header from './Header/Header';
+import GalleryList from './GalleryList/GalleryList';
 import { fetchPaintings } from '../utilities/apiCalls';
 
 export default {
@@ -14,7 +16,8 @@ export default {
     fetchPaintings();
   },
   components: {
-    Header
+    Header,
+    GalleryList
   },
   methods: {
     fetchPaintings
