@@ -8,7 +8,7 @@ yarn-error.log*
 /test/e2e/reports/
 selenium-debug.log
 .env.development
-/utilities/Keys
+/src/utilities/apiKeys.js
 
 # Editor directories and files
 .idea
