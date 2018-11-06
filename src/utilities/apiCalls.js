@@ -6,7 +6,6 @@ export const fetchPaintings = async () => {
   const response = await fetch(url);
   const data = await response.json();
   const cleanPaintings = await cleanData(data);
-  console.log(cleanPaintings);
   return cleanPaintings;
 };
 
