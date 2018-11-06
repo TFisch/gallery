@@ -8,19 +8,12 @@
 <script>
 import Header from './Header/Header';
 import GalleryList from './GalleryList/GalleryList';
-import { fetchPaintings } from '../utilities/apiCalls';
 
 export default {
   name: 'app',
-  mounted() {
-    fetchPaintings();
-  },
   components: {
     Header,
     GalleryList
-  },
-  methods: {
-    fetchPaintings
   }
 };
 </script>
