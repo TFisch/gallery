@@ -1,5 +1,5 @@
 import { harvardKey } from './apiKeys';
-import { cleanData } from './helper';
+import { cleanData, cleanPaintingObject } from './helper';
 
 export const fetchPaintings = async () => {
   const url = `https://api.harvardartmuseums.org/object?culture=37527795&classification=26&size=100&apikey=${harvardKey}`;
@@ -9,3 +9,10 @@ export const fetchPaintings = async () => {
   return cleanPaintings;
 };
 
+export const fetchObjectById = async id => {
+  const url = `https://api.harvardartmuseums.org/object?relatedto=${id}&apikey=${harvardKey}`;
+  const response = await fetch(url);
+  const data = await response.json();
+  const cleanObject = await cleanPaintingObject(data);
+  return cleanObject;
+}
