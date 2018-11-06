@@ -8,11 +8,3 @@ export const fetchPaintings = async () => {
   const cleanPaintings = await cleanData(data);
   return cleanPaintings;
 };
-
-export const fetchObjectById = async id => {
-  const url = `https://api.harvardartmuseums.org/object?relatedto=${id}&apikey=${harvardKey}`;
-  const response = await fetch(url);
-  const data = await response.json();
-  const cleanObject = await cleanPaintingObject(data);
-  return cleanObject;
-}
