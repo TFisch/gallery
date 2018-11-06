@@ -17,14 +17,14 @@ export default {
 
 <style scoped>
 .header {
-  background-color: lime;
-  border-bottom: 1px solid black;
+  background-color: #8e8268;
   height: 3em;
   margin: auto;
 }
 
 .text {
-  color: brown;
+  color: #86b3d1;
+  text-shadow: 2px 2px black;
   margin: auto;
 }
 </style>

@@ -1,6 +1,6 @@
 <template>
-  <div class="card" v-on:click="fetchObjectById(painting.id)">
-    <img v-bind:src="this.painting.image[0].baseimageurl" class="image" />
+  <div class="card" v-on:click="fetchPaintingObject(painting)">
+    <img v-bind:src="this.painting.image" class="image" />
   </div>
 </template>
 
@@ -9,9 +9,16 @@ import { fetchObjectById } from '@/utilities/apiCalls';
 
 export default {
   name: 'card',
-  props: ['painting'],
+  props: ['painting', 'getPainting'],
   methods: {
-    fetchObjectById
+    fetchPaintingObject: async function(painting) {
+      await this.getPainting(painting);
+    }
+  },
+  data() {
+    return {
+      selected: {}
+    };
   }
 };
 </script>
@@ -19,8 +26,8 @@ export default {
 <style scoped>
 .card {
   align-items: center;
-  background-color: magenta;
-  border: solid black 1px;
+  background-color: #aaa0a0;
+  border: solid black 2.5px;
   display: flex;
   height: 20em;
   justify-content: center;
@@ -35,7 +42,7 @@ export default {
   align-items: center;
   width: auto;
   height: auto;
-  max-width: 100%;
-  max-height: 100%;
+  max-width: 90%;
+  max-height: 90%;
 }
 </style>
