@@ -1,13 +1,18 @@
 <template>
-  <div class="card">
+  <div class="card" v-on:click="fetchObjectById(painting.id)">
     <img v-bind:src="this.painting.image[0].baseimageurl" class="image" />
   </div>
 </template>
 
 <script>
+import { fetchObjectById } from '@/utilities/apiCalls';
+
 export default {
   name: 'card',
-  props: ['painting']
+  props: ['painting'],
+  methods: {
+    fetchObjectById
+  }
 };
 </script>
 
