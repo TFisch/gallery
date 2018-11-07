@@ -1,30 +1,38 @@
-# gallery
+## Gallery
+Displays the Harvard Museum collection of Japanese Paintings. This is a first exploration into the Vue Framework.
 
-> Art gallery using Hardvard Museum API
+### Links
+- [vue-art-gallery](https://vue-art-gallery.herokuapp.com/) live on Heroku
 
-## Build Setup
 
-``` bash
-# install dependencies
-npm install
+### Technologies Used
 
-# serve with hot reload at localhost:8080
-npm run dev
+- Vue
 
-# build for production with minification
-npm run build
+### APIs Used
+- Harvard Museum API
 
-# build for production and view the bundle analyzer report
-npm run build --report
+### Screenshots
 
-# run unit tests
-npm run unit
+##### Gallery
+![gallery](screen.png)
 
-# run e2e tests
-npm run e2e
 
-# run all tests
-npm test
-```
+### Next Steps
+Additional enhancements will include:
+- Sort paintings by date and period
 
-For a detailed explanation on how things work, check out the [guide](http://vuejs-templates.github.io/webpack/) and [docs for vue-loader](http://vuejs.github.io/vue-loader).
+### Set Up
+#### Front-end
+
+Clone the repo
+
+Run `npm install` from the root directory
+
+Run `npm run start` and visit localhost:8080 in your browser
+
+### Test Driven Development
+Gallery uses Jest for testing
+
+Run with `npm test` in the root directory on the Front-End
+
