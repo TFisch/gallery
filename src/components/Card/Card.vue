@@ -5,8 +5,6 @@
 </template>
 
 <script>
-import { fetchObjectById } from '@/utilities/apiCalls';
-
 export default {
   name: 'card',
   props: ['painting', 'getPainting'],
