@@ -38,6 +38,10 @@ export default {
   overflow: hidden;
 }
 
+.card:hover {
+  border: solid lightgray 2.5px;
+}
+
 .image {
   align-items: center;
   width: auto;

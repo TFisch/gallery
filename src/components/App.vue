@@ -40,7 +40,7 @@ export default {
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
-  background-color: #8e8268;
+  background-color: #474853;
   height: 100%;
   width: 100%;
 }

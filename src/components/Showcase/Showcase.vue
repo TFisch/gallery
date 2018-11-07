@@ -29,11 +29,9 @@ export default {
 .showcase {
   align-items: center;
   background-color: #474853;
-  border-top: solid black 2.5px;
   display: flex;
   height: 45em;
   justify-content: center;
-  margin-top: 0.5em;
   overflow: scroll;
   width: 50vw;
 }
@@ -58,6 +56,5 @@ export default {
   align-items: center;
   width: 20em;
   max-width: 14em;
-  /* max-height: 40px; */
 }
 </style>
