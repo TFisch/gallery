@@ -23,9 +23,11 @@ module.exports = {
   },
   // add your custom rules here
   rules: {
+    'eslint func-names': 'off',
+    'space-before-function-paren': ['error', 'never'],
+    'eslint no-return-assign': 'off',
     'comma-dangle': ['error', 'never'],
     'import/prefer-default-export': 'off',
-    // don't require .vue extension when importing
     'import/extensions': [
       'error',
       'always',

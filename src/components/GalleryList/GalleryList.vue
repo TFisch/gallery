@@ -1,6 +1,7 @@
 <template>
 <div class="gallery-list">
-    <card v-for="painting in paintings" :key="painting.id" :painting="painting" v-bind:getPainting="getPainting"> {{painting}}</card>
+    <card v-for="painting in paintings" :key="painting.id" 
+    :painting="painting" v-bind:getPainting="getPainting"> {{painting}}</card>
 </div>
 </template>
 

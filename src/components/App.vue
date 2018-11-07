@@ -12,6 +12,7 @@
 import Header from './Header/Header';
 import GalleryList from './GalleryList/GalleryList';
 import Showcase from './Showcase/Showcase';
+
 export default {
   name: 'app',
   components: {
